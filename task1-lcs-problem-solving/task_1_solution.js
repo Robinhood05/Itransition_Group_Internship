@@ -5,6 +5,10 @@ if (a.length === 0) {
     process.exit(0);
 }
 
+
+
+
+
 //shortest string >= Ans string
 let s = a[0];
 for (let i = 1; i < a.length; i++) {
@@ -12,6 +16,7 @@ for (let i = 1; i < a.length; i++) {
         s = a[i];
     }
 }
+
 
 for (let len = s.length; len > 0; len--) {
     for (let i = 0; i + len <= s.length; i++) {
